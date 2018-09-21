@@ -1,0 +1,16 @@
+2018-09-21 10:53:17  [14155] PRAGMA journal_mode=WAL
+2018-09-21 10:53:18  [14155] PRAGMA foreign_keys=ON
+2018-09-21 10:53:18  [14155] PRAGMA busy_timeout=5000
+2018-09-21 10:53:18  [14155] PRAGMA synchronous=NORMAL
+2018-09-21 10:53:18  [14155] [BEGIN] [databaseId:0]
+2018-09-21 10:53:18  [14155] SELECT "id","title","body","created_at","updated_at","lock_revision" FROM "blog" t0
+2018-09-21 10:53:18  [14155] [COMMIT] [databaseId:0]
+2018-09-21 10:53:28  [14155] [BEGIN] [databaseId:0]
+2018-09-21 10:53:28  [14155] INSERT INTO blog ("title", "body", "created_at", "updated_at", "lock_revision") VALUES ('test', 'test', '2018-09-21T10:53:28', '2018-09-21T10:53:28', 1)
+2018-09-21 10:53:28  [14155] [COMMIT] [databaseId:0]
+2018-09-21 10:53:28  [14155] [BEGIN] [databaseId:0]
+2018-09-21 10:53:28  [14155] SELECT "id","title","body","created_at","updated_at","lock_revision" FROM "blog" t0 WHERE t0."id"=1 LIMIT 1
+2018-09-21 10:53:28  [14155] [COMMIT] [databaseId:0]
+2018-09-21 10:53:30  [14155] [BEGIN] [databaseId:0]
+2018-09-21 10:53:30  [14155] SELECT "id","title","body","created_at","updated_at","lock_revision" FROM "blog" t0
+2018-09-21 10:53:30  [14155] [COMMIT] [databaseId:0]
